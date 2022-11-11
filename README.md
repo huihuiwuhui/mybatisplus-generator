@@ -1,2 +1,2 @@
 # mybatisplus-generator
-mybatis-plus代码生成器
+基于配置文件的mybatisplus代码生成工具
