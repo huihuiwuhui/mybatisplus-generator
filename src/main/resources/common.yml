@@ -1,0 +1,22 @@
+
+#文件输出目录
+projectPath: ""
+#Java文件输出目录
+outputDir: "/src/main/java"
+# xml输出目录
+outputXml: "/src/main/resources/mapper"
+author: "zf"
+packageName: "com.itcv.storage"
+db:
+  url: jdbc:mysql://192.168.0.125:3306/empi?useOldAliasMetadataBehavior=true&serverTimezone=Asia/Shanghai&zeroDateTimeBehavior=convertToNull&useSSL=false&characterEncoding=gbk&allowPublicKeyRetrieval=true
+  username: root
+  password: 123456
+  driver: com.mysql.cj.jdbc.Driver
+  # 表名，为空，生成所有的表
+  tableNames: ["storage_bucket_records"]
+  # 剔除公共字段
+  commonField: ["remark","createdByCode","createdByName","createdDate","updatedByCode","updatedByName","updatedDate"]
+  # 表前缀，生成的实体类，不含前缀
+  tablePrefixes: [""]
+  fieldPrefixes: [""]
+
